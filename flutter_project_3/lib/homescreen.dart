@@ -19,7 +19,6 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-       
         bottom: PreferredSize(
             preferredSize: Size.fromHeight(60),
             child: Container(
@@ -211,61 +210,69 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        height: 227,
-                        width: 179,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: Color.fromARGB(255, 219, 217, 217),
-                        ),
-                        child: Column(
-                          children: [
-                            Align(
-                              alignment: Alignment.topCenter,
-                              child: Text(
-                                "Unit 1",
-                                style: GoogleFonts.roboto(
-                                  textStyle: TextStyle(fontSize: 30),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => VerbalSkills(),
+                          ));
+                        },
+                        child: Container(
+                          height: 227,
+                          width: 179,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Color.fromARGB(255, 219, 217, 217),
+                          ),
+                          child: Column(
+                            children: [
+                              Align(
+                                alignment: Alignment.topCenter,
+                                child: Text(
+                                  "Unit 1",
+                                  style: GoogleFonts.roboto(
+                                    textStyle: TextStyle(fontSize: 30),
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(height: 140),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.only(left: 10),
-                                  child: Row(
-                                    children: [
-                                      const Icon(
-                                        FontAwesome.crown_solid,
-                                        color: Color(0xffECC055),
-                                      ),
-                                      SizedBox(width: 3),
-                                      Container(
-                                        height: 14,
-                                        width: 130,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(15),
-                                              topRight: Radius.circular(10),
-                                              bottomRight: Radius.circular(10)),
-                                          gradient: LinearGradient(
-                                            stops: [0.8, 0.2],
-                                            begin: Alignment.centerLeft,
-                                            end: Alignment.centerRight,
-                                            colors: [
-                                              Color(0xffECC055),
-                                              Color(0xffC4C4C4)
-                                            ],
-                                          ),
+                              SizedBox(height: 140),
+                              Row(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 10),
+                                    child: Row(
+                                      children: [
+                                        const Icon(
+                                          FontAwesome.crown_solid,
+                                          color: Color(0xffECC055),
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
+                                        SizedBox(width: 3),
+                                        Container(
+                                          height: 14,
+                                          width: 130,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(15),
+                                                topRight: Radius.circular(10),
+                                                bottomRight:
+                                                    Radius.circular(10)),
+                                            gradient: LinearGradient(
+                                              stops: [0.8, 0.2],
+                                              begin: Alignment.centerLeft,
+                                              end: Alignment.centerRight,
+                                              colors: [
+                                                Color(0xffECC055),
+                                                Color(0xffC4C4C4)
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Container(
@@ -323,63 +330,71 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        height: 227,
-                        width: 179,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: Color.fromARGB(255, 219, 217, 217),
-                        ),
-                        child: Column(
-                          children: [
-                            Align(
-                              alignment: Alignment.topCenter,
-                              child: Text(
-                                "Unit 1",
-                                style: GoogleFonts.roboto(
-                                  textStyle: TextStyle(fontSize: 30),
+                      InkWell(
+                        onTap: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => VerbalSkills(),
+                          ));
+                        },
+                        child: Container(
+                          height: 227,
+                          width: 179,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
+                            color: Color.fromARGB(255, 219, 217, 217),
+                          ),
+                          child: Column(
+                            children: [
+                              Align(
+                                alignment: Alignment.topCenter,
+                                child: Text(
+                                  "Unit 1",
+                                  style: GoogleFonts.roboto(
+                                    textStyle: TextStyle(fontSize: 30),
+                                  ),
                                 ),
                               ),
-                            ),
-                            SizedBox(height: 140),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.only(left: 10),
-                                  child: Row(
-                                    children: [
-                                      const Icon(
-                                        FontAwesome.crown_solid,
-                                        color: Color(0xffECC055),
-                                      ),
-                                      SizedBox(
-                                        width: 3,
-                                      ),
-                                      Container(
-                                        height: 14,
-                                        width: 130,
-                                        decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(15),
-                                              topRight: Radius.circular(10),
-                                              bottomRight: Radius.circular(10)),
-                                          gradient: LinearGradient(
-                                            stops: [0.8, 0.2],
-                                            begin: Alignment.centerLeft,
-                                            end: Alignment.centerRight,
-                                            colors: [
-                                              Color(0xffECC055),
-                                              Color(0xffC4C4C4)
-                                            ],
-                                          ),
+                              SizedBox(height: 140),
+                              Row(
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 10),
+                                    child: Row(
+                                      children: [
+                                        const Icon(
+                                          FontAwesome.crown_solid,
+                                          color: Color(0xffECC055),
                                         ),
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
+                                        SizedBox(
+                                          width: 3,
+                                        ),
+                                        Container(
+                                          height: 14,
+                                          width: 130,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                                topLeft: Radius.circular(15),
+                                                topRight: Radius.circular(10),
+                                                bottomRight:
+                                                    Radius.circular(10)),
+                                            gradient: LinearGradient(
+                                              stops: [0.8, 0.2],
+                                              begin: Alignment.centerLeft,
+                                              end: Alignment.centerRight,
+                                              colors: [
+                                                Color(0xffECC055),
+                                                Color(0xffC4C4C4)
+                                              ],
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Container(
