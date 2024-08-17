@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project_3/community.dart';
-import 'package:project_3/homescreen.dart';
-import 'package:project_3/settings.dart';
+import 'package:flutter_project_3/community.dart';
+import 'package:flutter_project_3/homescreen.dart';
+import 'package:flutter_project_3/settings.dart';
 
 class Challenges extends StatefulWidget {
   const Challenges({super.key});

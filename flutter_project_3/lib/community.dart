@@ -1,11 +1,7 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_project_3/challenges.dart';
 import 'package:flutter_project_3/homescreen.dart';
-import 'package:project_3/challenges.dart';
-import 'package:project_3/homescreen.dart';
-import 'package:project_3/settings.dart';
+import 'package:flutter_project_3/settings.dart';
 
 class Community extends StatefulWidget {
   const Community({super.key});
@@ -487,11 +483,6 @@ class _CommunityState extends State<Community> {
                         ],
                       ),
                     ),
-
-
-
-
-                    
                   )
                 ],
               ),

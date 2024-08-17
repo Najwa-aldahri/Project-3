@@ -14,42 +14,50 @@ class _VerbalSkillsState extends State<VerbalSkills> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffE5E5E5), // Set the background color
-        title: Row(
-          children: [
-            const SizedBox(width: 30),
-            const Text(
-              " Verbal skills ",
-              style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w300),
-            ),
-            const SizedBox(
-              width: 50,
-            ),
-            Icon(
-              FontAwesome.crown_solid,
-              color: Color(0xffECC055),
-              size: 25,
-            ),
-            const Text(" 3",
-                style: TextStyle(fontSize: 25, color: Color(0xffECC055))),
-            const SizedBox(
-              width: 25,
-            ),
-            const Icon(
-              Icons.diamond,
-              color: Color(0xff02A1FB),
-              size: 35,
-            ),
-            const SizedBox(
-              width: 4,
-            ),
-            Text("213",
-                style: TextStyle(fontSize: 25, color: Color(0xff02A1FB))),
-          ],
-        ),
+        // backgroundColor: const Color(0xffE5E5E5), // Set the background color
+        bottom: PreferredSize(
+            preferredSize: Size.fromHeight(60),
+            child: Container(
+              height: 71,
+              width: 500,
+              color: const Color(0xffE5E5E5),
+              child: Row(
+                children: [
+                  const SizedBox(width: 30),
+                  const Text(
+                    " Verbal skills ",
+                    style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  const SizedBox(
+                    width: 50,
+                  ),
+                  Icon(
+                    FontAwesome.crown_solid,
+                    color: Color(0xffECC055),
+                    size: 25,
+                  ),
+                  const Text(" 3",
+                      style: TextStyle(fontSize: 25, color: Color(0xffECC055))),
+                  const SizedBox(
+                    width: 25,
+                  ),
+                  const Icon(
+                    Icons.diamond,
+                    color: Color(0xff02A1FB),
+                    size: 35,
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  Text("213",
+                      style: TextStyle(fontSize: 25, color: Color(0xff02A1FB))),
+                ],
+              ),
+            )),
+
         automaticallyImplyLeading: false,
       ),
       body: Scaffold(
@@ -236,7 +244,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                     radius: 50,
                                     backgroundColor: Color(0xff72BFC7),
                                     child: Image.asset(
-                                      'assets/HandsBook.png',
+                                      'assets/Hands Book.png',
                                       width: 60,
                                       height: 60,
                                       fit: BoxFit.contain,
