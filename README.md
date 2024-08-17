@@ -1,61 +1,75 @@
-# Flutter UI Implementation Project
+![image](https://github.com/user-attachments/assets/0dd87c0a-4262-4639-8b72-e8bb62fc20e0)
 
-## Overview
-Greetings to the Flutter UI Implementation project! In this project, you will be working with the Flutter framework to implement a set of user interfaces using a specific list of widgets. The goal is to enhance your proficiency in Flutter development and UI implementation.
-
-
-## UI to Implement
-You are required to implement the following Figma design user interfaces:
-
-- [Figma Design - Educational Kids Game](https://www.figma.com/file/hr7vmPgtKJd95quaTZr5bt/Educational-kids-game-(Community)?type=design&node-id=0%3A1&mode=design&t=z9KUqxH5qF2QA9xp-1)
+# Flutter UI Project
+welcom to mental up an application that helps children to raise the level of thinking by using the application easily
 
 
 
-## Mandatory List of Widgets
-You must use the following list of widgets in your implementations:
-- Column
-- Row
-- ListView or related widgets
-- AppBar 
-- TextField
-- Icon
-- Button
-- Image
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#output">Output</a> •
+</p>
+
+## Key Features
+This project focuses on implementing essential UI features using Flutter and the goal is to enhance my proficiency in Flutter development and UI implementation.
+
+- **Custom AppBar:** A tailored AppBar with icons, text, and images to enhance the user interface.
+
+- **ListView:** A scrollable list that efficiently displays content in an organized manner.
+
+- **Interactive** Buttons: Buttons that respond to user interactions, making the app dynamic and engaging.
+
+- **Images:** Adding visual elements to make the app more appealing and informative.
+
+- **TextFields:** Input fields that allow users to enter information, making the app interactive.
+
+
+## How To Use
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Visual Studio Code] 
+
+```bash
+# Clone this repository
+$ git clone https: url
+
+# Go into the repository
+$ cd repo-name
+
+# Open project in vs
+$ code .
+
+# Run the project 
+$ dart run
+```
+
+## Contributing
+#### I would be happy to have your ideas to improving the project. Please feel free to do so.
+```bash
+# Fork the project
+
+# Create your feature branch
+$ git checkout -b branch-name
+
+# Commit your changes
+$ git commit -m 'Add some commit'
+
+# Push to the branch
+$ git push
+
+# Open a Pull Request
+
+```
+
+## Output 
+To understand the project more here is a short viedo to show the final UI of the project:  
+
+https://github.com/user-attachments/assets/b937493e-406c-417f-903e-f37262539441
 
 
 
-## Requirements
-1. **Code Organization:**
-    - Organize your Flutter project in a clean and structured manner.
-    
-2. **Widget Usage:**
-    - Ensure that you use the specified list of widgets for UI implementation.
-    
-3. **Navigation:**
-    - Include navigation between different screens or sections within your app.
 
 
+You have reached the end of the project article.
+Thank you for your reading ❤️
 
-## Submission Guidelines
-You will submit your project on GitHub by following these guidelines:
-1. Fork the Repository & Clone it
-2. Create a New Branch with your name, in this format: (First name - Last name), i.e. Nasser-GH
-3. Commit the changes frequently and push it
-4. Finally, create a pull request to the original repository
-
-**Note:**
-- This is an individual assignment, collaboration is not allowed, and each student should submit their unique work.
-- Be sure to include screenshots of the implemented UIs in your README file in your project
-- Make sure to apply the exact given UI as specified in the assignment. Do not add any additional elements or remove any existing ones. The UI should match the provided design precisely.
-
-
-
-## Deadline 
-The deadline for submitting the project is 2024 Aug 18 at 9:59 AM
-
-
-## Additional Notes
-- Reach out for clarification or assistance if needed.
-- Have an enjoyable coding journey!
-
-Best of luck!
