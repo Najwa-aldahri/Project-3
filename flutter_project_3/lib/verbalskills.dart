@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 class VerbalSkills extends StatefulWidget {
@@ -14,24 +13,23 @@ class _VerbalSkillsState extends State<VerbalSkills> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: const Color(0xffE5E5E5), // Set the background color
         bottom: PreferredSize(
-            preferredSize: Size.fromHeight(60),
+            preferredSize: const Size.fromHeight(60),
             child: Container(
               height: 71,
               width: 500,
               color: const Color(0xffE5E5E5),
-              child: Row(
+              child: const Row(
                 children: [
-                  const SizedBox(width: 30),
-                  const Text(
+                  SizedBox(width: 30),
+                  Text(
                     " Verbal skills ",
                     style: TextStyle(
                         fontSize: 30,
                         color: Colors.black,
                         fontWeight: FontWeight.w400),
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 50,
                   ),
                   Icon(
@@ -39,17 +37,17 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                     color: Color(0xffECC055),
                     size: 25,
                   ),
-                  const Text(" 3",
+                  Text(" 3",
                       style: TextStyle(fontSize: 25, color: Color(0xffECC055))),
-                  const SizedBox(
+                  SizedBox(
                     width: 25,
                   ),
-                  const Icon(
+                  Icon(
                     Icons.diamond,
                     color: Color(0xff02A1FB),
                     size: 35,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 4,
                   ),
                   Text("213",
@@ -61,12 +59,12 @@ class _VerbalSkillsState extends State<VerbalSkills> {
         automaticallyImplyLeading: false,
       ),
       body: Scaffold(
-          backgroundColor: Color(0xffFBF5F2),
+          backgroundColor: const Color(0xffFBF5F2),
           body: SingleChildScrollView(
             child: Center(
                 child: Column(children: [
               Padding(
-                padding: EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 10),
                 child: Column(
                   children: [
                     SizedBox(
@@ -87,23 +85,23 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.only(top: 30),
+                              padding: const EdgeInsets.only(top: 30),
                               child: Column(
                                 children: [
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 24,
                                   ),
-                                  Text(
+                                  const Text(
                                     "unit 1",
                                     style: TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.normal),
                                   ),
-                                  SizedBox(height: 8),
+                                  const SizedBox(height: 8),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         FontAwesome.crown_solid,
                                         color: Colors.amber,
                                         size: 28,
@@ -131,7 +129,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                           ),
                                         ],
                                       ),
-                                      SizedBox(width: 4),
+                                      const SizedBox(width: 4),
                                       Text(
                                         '3/40',
                                         style: TextStyle(
@@ -179,7 +177,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               backgroundColor: Colors.white,
                               child: CircleAvatar(
                                 radius: 50,
-                                backgroundColor: Color(0xff72BFC7),
+                                backgroundColor: const Color(0xff72BFC7),
                                 child: Image.asset(
                                   'assets/Hands Pencil 1.png',
                                   width: 60,
@@ -189,7 +187,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             bottom: 10,
                             right: 12,
                             child: Stack(
@@ -212,8 +210,8 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                           )
                         ],
                       ),
-                      SizedBox(height: 8), // Space between circle and text
-                      Text(
+                      const SizedBox(height: 8), 
+                      const Text(
                         'Intro',
                         style: TextStyle(
                           fontSize: 20,
@@ -222,18 +220,15 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 15), // Space between rows
-                  // Bottom Circles
+                  const SizedBox(height: 15), 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // First Circle
                       Column(
                         children: [
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              // Circle Avatar for the image
                               CircleAvatar(
                                 radius: 60,
                                 backgroundColor: Colors.grey.shade300,
@@ -242,7 +237,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                   backgroundColor: Colors.white,
                                   child: CircleAvatar(
                                     radius: 50,
-                                    backgroundColor: Color(0xff72BFC7),
+                                    backgroundColor: const Color(0xff72BFC7),
                                     child: Image.asset(
                                       'assets/Hands Book.png',
                                       width: 60,
@@ -252,8 +247,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                   ),
                                 ),
                               ),
-                              // Positioned Crown Icon
-                              Positioned(
+                              const Positioned(
                                 bottom: 10,
                                 right: 10,
                                 child: Stack(
@@ -276,8 +270,8 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 8), // Space between circle and text
-                          Text(
+                          const SizedBox(height: 8), // Space between circle and text
+                          const Text(
                             'Phrases',
                             style: TextStyle(
                               fontSize: 18,
@@ -286,14 +280,14 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                           ),
                         ],
                       ),
-                      SizedBox(width: 30), // Space between items
-                      // Second Circle
+                      const SizedBox(width: 30), 
+                  
                       Column(
                         children: [
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              // Circle Avatar for the image
+                          
                               CircleAvatar(
                                 radius: 60,
                                 backgroundColor: Colors.grey.shade300,
@@ -302,7 +296,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                   backgroundColor: Colors.white,
                                   child: CircleAvatar(
                                     radius: 50,
-                                    backgroundColor: Color(0xff72BFC7),
+                                    backgroundColor: const Color(0xff72BFC7),
                                     child: Image.asset(
                                       'assets/Dayflow Bike.png',
                                       width: 60,
@@ -312,8 +306,8 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                   ),
                                 ),
                               ),
-                              // Positioned Crown Icon
-                              Positioned(
+                            
+                              const Positioned(
                                 bottom: 10,
                                 right: 12,
                                 child: Stack(
@@ -336,8 +330,8 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 8), // Space between circle and text
-                          Text(
+                          const SizedBox(height: 8),
+                          const Text(
                             'Travel',
                             style: TextStyle(
                               fontSize: 18,
@@ -348,7 +342,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   Column(
@@ -359,7 +353,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                           CircleAvatar(
                             radius: 60,
                             backgroundColor: Colors.grey.shade300,
-                            child: CircleAvatar(
+                            child: const CircleAvatar(
                               radius: 55,
                               backgroundColor: Colors.white,
                               child: CircleAvatar(
@@ -372,7 +366,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                   )),
                             ),
                           ),
-                          Positioned(
+                          const Positioned(
                             bottom: 10,
                             right: 12,
                             child: Stack(
@@ -390,22 +384,21 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 15), // Space between rows
-                  // Bottom Circles
+                  const SizedBox(height: 15), 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // First Circle
+                  
                       Column(
                         children: [
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              // Circle Avatar for the image
+                           
                               CircleAvatar(
                                 radius: 60,
                                 backgroundColor: Colors.grey.shade300,
-                                child: CircleAvatar(
+                                child: const CircleAvatar(
                                   radius: 55,
                                   backgroundColor: Colors.white,
                                   child: CircleAvatar(
@@ -419,7 +412,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                 ),
                               ),
                               // Positioned Crown Icon
-                              Positioned(
+                              const Positioned(
                                 bottom: 10,
                                 right: 10,
                                 child: Stack(
@@ -435,21 +428,20 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ],
                           ),
-                          // Space between circle and text
+                         
                         ],
                       ),
-                      SizedBox(width: 30), // Space between items
-                      // Second Circle
+                      const SizedBox(width: 30),
                       Column(
                         children: [
                           Stack(
                             alignment: Alignment.center,
                             children: [
-                              // Circle Avatar for the image
+                            
                               CircleAvatar(
                                 radius: 60,
                                 backgroundColor: Colors.grey.shade300,
-                                child: CircleAvatar(
+                                child: const CircleAvatar(
                                   radius: 55,
                                   backgroundColor: Colors.white,
                                   child: CircleAvatar(
@@ -462,8 +454,8 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                                       )),
                                 ),
                               ),
-                              // Positioned Crown Icon
-                              Positioned(
+                           
+                              const Positioned(
                                 bottom: 10,
                                 right: 12,
                                 child: Stack(
@@ -479,7 +471,7 @@ class _VerbalSkillsState extends State<VerbalSkills> {
                               ),
                             ],
                           ),
-                          // Space between circle and text
+                          
                         ],
                       ),
                     ],

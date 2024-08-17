@@ -20,19 +20,19 @@ class _ChallengesState extends State<Challenges> {
           SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: 140), // Space for the fixed Row
+                const SizedBox(height: 140), // Space for the fixed Row
                 Container(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Column(
                     children: [
                       // Example scrollable content
                       Container(
                         height: 120,
                         width: 430,
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
                           border:
-                              Border.all(color: Color(0xffE5E5E5), width: 2),
+                              Border.all(color: const Color(0xffE5E5E5), width: 2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -42,8 +42,8 @@ class _ChallengesState extends State<Challenges> {
                               width: 100,
                               height: 100,
                             ),
-                            SizedBox(width: 40),
-                            Column(
+                            const SizedBox(width: 40),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -67,8 +67,8 @@ class _ChallengesState extends State<Challenges> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Align(
+                      const SizedBox(height: 20),
+                      const Align(
                         alignment: Alignment.centerLeft,
                         child: Text(
                           " Achievements",
@@ -76,14 +76,14 @@ class _ChallengesState extends State<Challenges> {
                               fontSize: 30, fontWeight: FontWeight.w400),
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Container(
                         height: 120,
                         width: 430,
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
                           border:
-                              Border.all(color: Color(0xffE5E5E5), width: 2),
+                              Border.all(color: const Color(0xffE5E5E5), width: 2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -93,8 +93,8 @@ class _ChallengesState extends State<Challenges> {
                               width: 130,
                               height: 150,
                             ),
-                            SizedBox(width: 10),
-                            Column(
+                            const SizedBox(width: 10),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -118,14 +118,14 @@ class _ChallengesState extends State<Challenges> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Container(
                         height: 120,
                         width: 430,
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
                           border:
-                              Border.all(color: Color(0xffE5E5E5), width: 2),
+                              Border.all(color: const Color(0xffE5E5E5), width: 2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -135,8 +135,8 @@ class _ChallengesState extends State<Challenges> {
                               width: 130,
                               height: 150,
                             ),
-                            SizedBox(width: 10),
-                            Column(
+                            const SizedBox(width: 10),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -160,14 +160,14 @@ class _ChallengesState extends State<Challenges> {
                           ],
                         ),
                       ),
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Container(
                         height: 120,
                         width: 430,
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                         decoration: BoxDecoration(
                           border:
-                              Border.all(color: Color(0xffE5E5E5), width: 2),
+                              Border.all(color: const Color(0xffE5E5E5), width: 2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -177,8 +177,8 @@ class _ChallengesState extends State<Challenges> {
                               width: 130,
                               height: 150,
                             ),
-                            SizedBox(width: 10),
-                            Column(
+                            const SizedBox(width: 10),
+                            const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -219,9 +219,9 @@ class _ChallengesState extends State<Challenges> {
             right: 0,
             child: Container(
               height: 86,
-              color: Color(0xffE5E5E5),
-              padding: EdgeInsets.symmetric(vertical: 10),
-              child: Row(
+              color: const Color(0xffE5E5E5),
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
@@ -240,18 +240,18 @@ class _ChallengesState extends State<Challenges> {
             right: 0,
             child: Container(
               height: 86,
-              color: Color(0xffE5E5E5),
-              padding: EdgeInsets.symmetric(vertical: 10),
+              color: const Color(0xffE5E5E5),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => HomeScreen(),
+                        builder: (context) => const HomeScreen(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.home,
                       size: 40,
                       color: Color(0xff747473),
@@ -260,7 +260,7 @@ class _ChallengesState extends State<Challenges> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Challenges(),
+                        builder: (context) => const Challenges(),
                       ));
                     },
                     child: Image.asset('assets/Vector-red.png'),
@@ -268,10 +268,10 @@ class _ChallengesState extends State<Challenges> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Community(),
+                        builder: (context) => const Community(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.people,
                       color: Color(0xff747473),
                       size: 40,
@@ -280,10 +280,10 @@ class _ChallengesState extends State<Challenges> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Settings(),
+                        builder: (context) => const Settings(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.settings,
                       size: 40,
                       color: Color(0xff747473),

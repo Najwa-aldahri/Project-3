@@ -20,16 +20,15 @@ class _CommunityState extends State<Community> {
           SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.only(
-                  bottom: 86), // Leave space for the bottom nav bar
+                  bottom: 86), 
               child: Column(
                 children: [
-                  SizedBox(height: 180), // Leave space for the fixed Row
-                  // Your scrollable content here
+                  const SizedBox(height: 180), 
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
                       children: [
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
@@ -54,10 +53,10 @@ class _CommunityState extends State<Community> {
                             )
                           ],
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Transform.translate(
-                          offset: Offset(0, -13),
-                          child: CircleAvatar(
+                          offset: const Offset(0, -13),
+                          child: const CircleAvatar(
                             radius: 50,
                             backgroundImage: AssetImage('assets/Ellipse 1.png'),
                           ),
@@ -65,37 +64,37 @@ class _CommunityState extends State<Community> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
-                    color: Color(0xffE5E5E5),
+                    color: const Color(0xffE5E5E5),
                     height: 5, // Example content
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
                     height: 69,
                     width: 420,
                     decoration: BoxDecoration(
-                        border: Border.all(color: Color(0xffE5E5E5), width: 2),
+                        border: Border.all(color: const Color(0xffE5E5E5), width: 2),
                         borderRadius: BorderRadius.circular(20)),
                     child: Row(
                       children: [
-                        SizedBox(width: 30),
+                        const SizedBox(width: 30),
                         Image.asset('assets/🎊.png'),
-                        Text(
+                        const Text(
                           "  Friends updates",
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.w400),
                         ),
-                        Spacer(),
-                        Icon(
+                        const Spacer(),
+                        const Icon(
                           Icons.arrow_forward_ios_outlined,
                           color: Color.fromARGB(255, 217, 216, 216),
                         )
                       ],
                     ),
                   ),
-                  SizedBox(height: 35),
-                  Row(
+                  const SizedBox(height: 35),
+                  const Row(
                     children: [
                       Text(
                         "   Statistics",
@@ -103,7 +102,7 @@ class _CommunityState extends State<Community> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Center(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -114,26 +113,26 @@ class _CommunityState extends State<Community> {
                             Container(
                               height: 80,
                               width: 200,
-                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                    color: Color(0xffE5E5E5), width: 2),
+                                    color: const Color(0xffE5E5E5), width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.local_fire_department,
                                     color: Colors.orange,
                                     size: 30,
                                   ),
-                                  SizedBox(width: 10),
+                                  const SizedBox(width: 10),
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "3",
                                         style: TextStyle(
                                           fontSize: 20,
@@ -156,26 +155,26 @@ class _CommunityState extends State<Community> {
                             Container(
                               height: 80,
                               width: 200,
-                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                    color: Color(0xffE5E5E5), width: 2),
+                                    color: const Color(0xffE5E5E5), width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.bolt,
                                     color: Color(0xffECC055),
                                     size: 50,
                                   ),
-                                  SizedBox(width: 10),
+                                  const SizedBox(width: 10),
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "1432",
                                         style: TextStyle(
                                           fontSize: 20,
@@ -197,17 +196,17 @@ class _CommunityState extends State<Community> {
                             ),
                           ],
                         ),
-                        SizedBox(height: 16),
+                        const SizedBox(height: 16),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Container(
                               height: 80,
                               width: 200,
-                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                    color: Color(0xffE5E5E5), width: 2),
+                                    color: const Color(0xffE5E5E5), width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
@@ -217,13 +216,13 @@ class _CommunityState extends State<Community> {
                                     width: 40,
                                     height: 40,
                                   ),
-                                  SizedBox(width: 3),
+                                  const SizedBox(width: 3),
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "Bronze",
                                         style: TextStyle(
                                           fontSize: 20,
@@ -246,10 +245,10 @@ class _CommunityState extends State<Community> {
                             Container(
                               height: 80,
                               width: 200,
-                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              padding: const EdgeInsets.symmetric(horizontal: 10),
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                    color: Color(0xffE5E5E5), width: 2),
+                                    color: const Color(0xffE5E5E5), width: 2),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
@@ -259,13 +258,13 @@ class _CommunityState extends State<Community> {
                                     width: 50,
                                     height: 50,
                                   ),
-                                  SizedBox(width: 10),
+                                  const SizedBox(width: 10),
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Text(
+                                      const Text(
                                         "0",
                                         style: TextStyle(
                                           fontSize: 20,
@@ -290,8 +289,8 @@ class _CommunityState extends State<Community> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 35),
-                  Row(
+                  const SizedBox(height: 35),
+                  const Row(
                     children: [
                       Text(
                         "  Friends",
@@ -310,12 +309,12 @@ class _CommunityState extends State<Community> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
                     height: 200,
                     width: 420,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xffE5E5E5), width: 2),
+                      border: Border.all(color: const Color(0xffE5E5E5), width: 2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
@@ -326,8 +325,8 @@ class _CommunityState extends State<Community> {
                           children: [
                             Expanded(
                               child: Container(
-                                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-                                decoration: BoxDecoration(
+                                padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                                decoration: const BoxDecoration(
                                   border: Border(
                                     bottom: BorderSide(
                                       color: Colors.blue,
@@ -335,7 +334,7 @@ class _CommunityState extends State<Community> {
                                     ),
                                   ),
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "FOLLOWING",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
@@ -347,8 +346,8 @@ class _CommunityState extends State<Community> {
                             ),
                             Expanded(
                               child: Container(
-                                padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-                                child: Text(
+                                padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                                child: const Text(
                                   "FOLLOWERS",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
@@ -361,13 +360,13 @@ class _CommunityState extends State<Community> {
                           ],
                         ),
                         // Divider between tabs and content
-                        Divider(
+                        const Divider(
                           color: Color(0xffE5E5E5),
                           thickness: 1,
                           height: 1,
                         ),
                         // Rows for the user list
-                        Expanded(
+                        const Expanded(
                           child: Column(
                             children: [
                               ListTile(
@@ -399,14 +398,14 @@ class _CommunityState extends State<Community> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   Container(
                     height: 250,
                     width: 420,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Color(0xffE5E5E5), width: 2),
+                      border: Border.all(color: const Color(0xffE5E5E5), width: 2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Padding(
@@ -421,10 +420,10 @@ class _CommunityState extends State<Community> {
                                 height: 150,
                                 width: 150,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                   width:
                                       16), // Add spacing between image and text
-                              Expanded(
+                              const Expanded(
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -448,7 +447,7 @@ class _CommunityState extends State<Community> {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
                           Center(
@@ -456,19 +455,19 @@ class _CommunityState extends State<Community> {
                               height: 47,
                               width: 321,
                               decoration: BoxDecoration(
-                                color: Color(0xff02A1FB),
+                                color: const Color(0xff02A1FB),
                                 borderRadius: BorderRadius.circular(10),
                                 boxShadow: [
                                   BoxShadow(
-                                    color: Color(0xff02A1FB).withOpacity(
+                                    color: const Color(0xff02A1FB).withOpacity(
                                         0.5), // Blue shadow with opacity
                                     spreadRadius: 1,
                                     blurRadius: 10,
-                                    offset: Offset(0, 4), // Shadow position
+                                    offset: const Offset(0, 4), // Shadow position
                                   ),
                                 ],
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "INVITE FRIENDS",
                                   style: TextStyle(
@@ -495,9 +494,9 @@ class _CommunityState extends State<Community> {
             right: 0,
             child: Container(
               height: 86,
-              color: Color(0xffE5E5E5),
-              padding: EdgeInsets.symmetric(vertical: 10),
-              child: Row(
+              color: const Color(0xffE5E5E5),
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Text(
@@ -515,18 +514,18 @@ class _CommunityState extends State<Community> {
             right: 0,
             child: Container(
               height: 86,
-              color: Color(0xffE5E5E5),
-              padding: EdgeInsets.symmetric(vertical: 10),
+              color: const Color(0xffE5E5E5),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => HomeScreen(),
+                        builder: (context) => const HomeScreen(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.home,
                       size: 40,
                       color: Color(0xff747473),
@@ -535,7 +534,7 @@ class _CommunityState extends State<Community> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Challenges(),
+                        builder: (context) => const Challenges(),
                       ));
                     },
                     child: Image.asset('assets/Vector.png'),
@@ -543,10 +542,10 @@ class _CommunityState extends State<Community> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Community(),
+                        builder: (context) => const Community(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.people,
                       color: Color(0xffAB70DF),
                       size: 40,
@@ -555,10 +554,10 @@ class _CommunityState extends State<Community> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Settings(),
+                        builder: (context) => const Settings(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.settings,
                       size: 40,
                       color: Color(0xff747473),

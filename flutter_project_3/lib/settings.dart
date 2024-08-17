@@ -21,10 +21,7 @@ class _SettingsState extends State<Settings> {
             child: Column(
               children: [
                 const SizedBox(height: 180),
-                // Space for the fixed Row
-                // Container(
-                // padding: EdgeInsets.all(16.0),
-                // child:
+               
                 Column(
                   children: [
                     Image.asset(
@@ -131,7 +128,7 @@ class _SettingsState extends State<Settings> {
               ],
             ),
           ),
-          // Fixed Row using Positioned
+         
           Positioned(
             top: 41,
             left: 0,

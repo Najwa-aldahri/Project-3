@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_project_3/homescreen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -119,10 +118,10 @@ class _LogInState extends State<LogIn> {
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
                             borderSide:
-                                BorderSide(width: 0, style: BorderStyle.none)),
+                                const BorderSide(width: 0, style: BorderStyle.none)),
                         hintText: "Username"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   TextField(
@@ -132,21 +131,21 @@ class _LogInState extends State<LogIn> {
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(25),
                             borderSide:
-                                BorderSide(width: 0, style: BorderStyle.none)),
+                                const BorderSide(width: 0, style: BorderStyle.none)),
                         hintText: "Password"),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 1,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
-                          padding: EdgeInsets.symmetric(vertical: 25),
+                          padding: const EdgeInsets.symmetric(vertical: 25),
                           child: Text("Forgot Password?",
                               textAlign: TextAlign.right,
                               style: GoogleFonts.roboto(
-                                  textStyle: TextStyle(
+                                  textStyle: const TextStyle(
                                 fontWeight: FontWeight.bold,
                               ))))
                     ],
@@ -154,11 +153,11 @@ class _LogInState extends State<LogIn> {
                   ElevatedButton(
                       onPressed: () =>
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => HomeScreen(),
+                            builder: (context) => const HomeScreen(),
                           )),
                       style: ElevatedButton.styleFrom(
-                          minimumSize: Size(316, 58),
-                          backgroundColor: Color(0xffEB9F4A)),
+                          minimumSize: const Size(316, 58),
+                          backgroundColor: const Color(0xffEB9F4A)),
                       child: Text(
                         "GO",
                         style: GoogleFonts.roboto(
@@ -166,7 +165,7 @@ class _LogInState extends State<LogIn> {
                             color: Colors.white,
                             fontWeight: FontWeight.bold),
                       )),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   RichText(

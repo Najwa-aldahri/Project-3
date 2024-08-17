@@ -20,14 +20,14 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         bottom: PreferredSize(
-            preferredSize: Size.fromHeight(60),
+            preferredSize: const Size.fromHeight(60),
             child: Container(
               height: 71,
               width: 500,
               color: const Color(0xffE5E5E5),
               child: Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     width: 70,
                   ),
                   const Icon(
@@ -64,31 +64,31 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 53),
+                    padding: const EdgeInsets.only(top: 53),
                     child: Row(
                       children: [
-                        SizedBox(width: 22),
+                        const SizedBox(width: 22),
                         Text(
                           "Logical reasoning  ",
                           style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               fontSize: 35,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
                         ),
-                        Icon(
+                        const Icon(
                           FontAwesome.crown_solid,
                           color: Color(0xffECC055),
                         ),
                         Text(
                           " 18/40",
                           style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                                 fontSize: 20, color: Color(0xffC4C4C4)),
                           ),
                         ),
-                        SizedBox(width: 12),
+                        const SizedBox(width: 12),
                       ],
                     ),
                   ),
@@ -98,7 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => VerbalSkills(),
+                            builder: (context) => const VerbalSkills(),
                           ));
                         },
                         child: Container(
@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 179,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
-                            color: Color.fromARGB(255, 219, 217, 217),
+                            color: const Color.fromARGB(255, 219, 217, 217),
                           ),
                           child: Column(
                             children: [
@@ -115,26 +115,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   "Unit 1",
                                   style: GoogleFonts.roboto(
-                                    textStyle: TextStyle(fontSize: 30),
+                                    textStyle: const TextStyle(fontSize: 30),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 140),
+                              const SizedBox(height: 140),
                               Row(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(left: 10),
+                                    padding: const EdgeInsets.only(left: 10),
                                     child: Row(
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           FontAwesome.crown_solid,
                                           color: Color(0xffECC055),
                                         ),
-                                        SizedBox(width: 3),
+                                        const SizedBox(width: 3),
                                         Container(
                                           height: 14,
                                           width: 130,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(15),
                                                 topRight: Radius.circular(10),
@@ -161,17 +161,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Icon(
-                            Icons.lock,
-                            size: 55,
-                          ),
-                        ),
                         height: 227,
                         width: 179,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
-                          color: Color.fromARGB(255, 219, 217, 217),
+                          color: const Color.fromARGB(255, 219, 217, 217),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.lock,
+                            size: 55,
+                          ),
                         ),
                       ),
                     ],
@@ -180,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.only(top: 35),
                     child: Row(
                       children: [
-                        SizedBox(width: 22),
+                        const SizedBox(width: 22),
                         Text(
                           "Artistic thinking      ",
                           style: GoogleFonts.roboto(
@@ -197,13 +197,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         Text(
                           " 35/40",
                           style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               fontSize: 20,
                               color: Color(0xffC4C4C4),
                             ),
                           ),
                         ),
-                        SizedBox(width: 12),
+                        const SizedBox(width: 12),
                       ],
                     ),
                   ),
@@ -213,7 +213,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => VerbalSkills(),
+                            builder: (context) => const VerbalSkills(),
                           ));
                         },
                         child: Container(
@@ -221,7 +221,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 179,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
-                            color: Color.fromARGB(255, 219, 217, 217),
+                            color: const Color.fromARGB(255, 219, 217, 217),
                           ),
                           child: Column(
                             children: [
@@ -230,26 +230,26 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   "Unit 1",
                                   style: GoogleFonts.roboto(
-                                    textStyle: TextStyle(fontSize: 30),
+                                    textStyle: const TextStyle(fontSize: 30),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 140),
+                              const SizedBox(height: 140),
                               Row(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(left: 10),
+                                    padding: const EdgeInsets.only(left: 10),
                                     child: Row(
                                       children: [
                                         const Icon(
                                           FontAwesome.crown_solid,
                                           color: Color(0xffECC055),
                                         ),
-                                        SizedBox(width: 3),
+                                        const SizedBox(width: 3),
                                         Container(
                                           height: 14,
                                           width: 130,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(15),
                                                 topRight: Radius.circular(10),
@@ -276,17 +276,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       Container(
-                        child: Center(
-                          child: Icon(
-                            Icons.lock,
-                            size: 55,
-                          ),
-                        ),
                         height: 227,
                         width: 179,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
-                          color: Color.fromARGB(255, 219, 217, 217),
+                          color: const Color.fromARGB(255, 219, 217, 217),
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.lock,
+                            size: 55,
+                          ),
                         ),
                       ),
                     ],
@@ -295,7 +295,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     padding: const EdgeInsets.only(top: 35),
                     child: Row(
                       children: [
-                        SizedBox(width: 22),
+                        const SizedBox(width: 22),
                         Text(
                           "Verbal skills    ",
                           style: GoogleFonts.roboto(
@@ -305,20 +305,20 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 70,
                         ),
                         const Icon(
                           FontAwesome.crown_solid,
                           color: Color(0xffECC055),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
                           "   3/40",
                           style: GoogleFonts.roboto(
-                            textStyle: TextStyle(
+                            textStyle: const TextStyle(
                               fontSize: 20,
                               color: Color(0xffC4C4C4),
                             ),
@@ -333,7 +333,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       InkWell(
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => VerbalSkills(),
+                            builder: (context) => const VerbalSkills(),
                           ));
                         },
                         child: Container(
@@ -341,7 +341,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 179,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20.0),
-                            color: Color.fromARGB(255, 219, 217, 217),
+                            color: const Color.fromARGB(255, 219, 217, 217),
                           ),
                           child: Column(
                             children: [
@@ -350,28 +350,28 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: Text(
                                   "Unit 1",
                                   style: GoogleFonts.roboto(
-                                    textStyle: TextStyle(fontSize: 30),
+                                    textStyle: const TextStyle(fontSize: 30),
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 140),
+                              const SizedBox(height: 140),
                               Row(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(left: 10),
+                                    padding: const EdgeInsets.only(left: 10),
                                     child: Row(
                                       children: [
                                         const Icon(
                                           FontAwesome.crown_solid,
                                           color: Color(0xffECC055),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 3,
                                         ),
                                         Container(
                                           height: 14,
                                           width: 130,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(15),
                                                 topRight: Radius.circular(10),
@@ -398,22 +398,22 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       Container(
-                        child: Center(
+                        height: 227,
+                        width: 179,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.0),
+                          color: const Color.fromARGB(255, 219, 217, 217),
+                        ),
+                        child: const Center(
                           child: Icon(
                             Icons.lock,
                             size: 55,
                           ),
                         ),
-                        height: 227,
-                        width: 179,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20.0),
-                          color: Color.fromARGB(255, 219, 217, 217),
-                        ),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 100,
                   )
                 ],
@@ -427,18 +427,18 @@ class _HomeScreenState extends State<HomeScreen> {
             right: 0,
             child: Container(
               height: 86,
-              color: Color(0xffE5E5E5),
-              padding: EdgeInsets.symmetric(vertical: 10),
+              color: const Color(0xffE5E5E5),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => HomeScreen(),
+                        builder: (context) => const HomeScreen(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.home,
                       size: 40,
                       color: Color(0xff41AC78),
@@ -447,7 +447,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Challenges(),
+                        builder: (context) => const Challenges(),
                       ));
                     },
                     child: Image.asset('assets/Vector.png'),
@@ -455,10 +455,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Community(),
+                        builder: (context) => const Community(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.people,
                       color: Color(0xff747473),
                       size: 40,
@@ -467,10 +467,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   InkWell(
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => Settings(),
+                        builder: (context) => const Settings(),
                       ));
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.settings,
                       size: 40,
                       color: Color(0xff747473),
