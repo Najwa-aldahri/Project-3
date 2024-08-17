@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_3/challenges.dart';
-import 'package:flutter_project_3/community.dart';
+import 'package:flutter_project_3/profile.dart';
 import 'package:flutter_project_3/settings.dart';
 import 'package:flutter_project_3/verbalskills.dart';
 import 'package:icons_plus/icons_plus.dart';

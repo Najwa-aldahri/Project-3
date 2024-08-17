@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_3/community.dart';
+import 'package:flutter_project_3/profile.dart';
 import 'package:flutter_project_3/homescreen.dart';
 import 'package:flutter_project_3/settings.dart';
 
